@@ -121,6 +121,24 @@ li {
     font-family: 'Ubuntu', sans-serif;
 }
 
+.strength{
+    text-align: center;
+    margin-bottom: 80px;
+}
+.strength h2{
+    margin-bottom: 50px;
+}
+.strength-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+.strengths .back-img img{
+width:250px;
+height: 380px;
+}
+
+
+
 .reviews h2 {
     margin-bottom: 40px;
 }
