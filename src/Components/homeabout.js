@@ -1,7 +1,7 @@
 import React from 'react';
 import '../App.css';
 import './homeabout.css';
-
+import IMG13 from './assets/img-13.jpg';
 function Homeabout() {
     return (
         <>
@@ -20,7 +20,7 @@ function Homeabout() {
                         <button>Explore More</button>
                     </div>
                     <div className='chef__img'>
-                        <img src="assets/img-13.jpg" />
+                        <img src={IMG13}/>
                     </div>
                 </div>
             </div>

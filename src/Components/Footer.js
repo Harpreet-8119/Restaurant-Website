@@ -2,6 +2,7 @@ import React from 'react';
 import { Button } from './Button';
 import { Link } from 'react-router-dom';
 import './Footer.css';
+import IMGLOGO from './assets/logo.jpg';
 function Footer() {
     return (
         <div className='footer-main'>
@@ -81,7 +82,7 @@ function Footer() {
                         <div className='social-media-wrap'>
                             <div className='footer-logo'>
                                 <Link className='social-logo'>
-                                <img src="assets/logo.jpg"/>
+                                <img src={IMGLOGO}/>
                                 </Link>
                             </div>
                             <small className='website-rights'>Sushi @ 2023</small>

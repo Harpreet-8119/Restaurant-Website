@@ -3,7 +3,7 @@ import './booking.css';
 import '../App.css';
 import Reservation from './pages/Reservation';
 import StrokeDesign from './Stroke';
-
+import IMG11 from './assets/img-11.jpg';
 function Booking() {
     return (
         <>
@@ -21,7 +21,7 @@ function Booking() {
                     <button>BOOK A TABLE</button>
                 </div>
                 <div className='img_events'>
-                    <img src='assets/img-11.jpg' />
+                    <img src={IMG11} />
                 </div>
             </div>
         </>

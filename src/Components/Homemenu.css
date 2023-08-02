@@ -85,7 +85,8 @@
     text-align: center;
 }
 
-button {
+.view-btn button {
+    
     position: relative;
     border-radius: 5px;
     padding: 10px 16px;
@@ -94,7 +95,7 @@ button {
     background:transparent;
     /* box-shadow: 5px 4px rgb(100, 97, 97); */
 }
-button::before{
+.view-btn button::before{
     position: absolute;
     content:"";
     top:7px;
@@ -105,7 +106,7 @@ button::before{
     border-radius: 5px;
     transition: 0.5s;
 }
-button:hover::before {
+.view-btn button:hover::before {
     top: 0;
     left: 0;
     transition: 0.5s;

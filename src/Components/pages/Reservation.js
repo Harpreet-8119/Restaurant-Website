@@ -3,7 +3,7 @@ import { useEffect, useRef, useState } from 'react';
 import { Calendar } from 'react-date-range';
 import format from 'date-fns/format';
 import Select from 'react-select';
-
+import StrokeDesign from '../Stroke';
 import './Reservation.css';
 import '../../App.css';
 import 'react-date-range/dist/styles.css';
@@ -67,49 +67,64 @@ function Reservation() {
     }
 
     return (
-        <> <div className='main-container'>
-            <img src="assets/img-7.jpg"/>
-            <div className='content'>
-            <div className='reser-container'>
-                <div className='person'>
-                    <Select className='noofperson'
-                        options={options}
-                        placeholder={' 1 Person  '}
-                    />
+        <>
+            <div className='main-container'>
+                <div className='reser-head'>
+                    <div className='heading'>
+                    <h2><StrokeDesign/>Reservation<StrokeDesign/></h2>
+                    <p>BOOK YOUR TABLE</p>
+                </div>
                 </div>
 
 
-                <div className='calendarwrap'>
 
-                    <input
-                        value={calendar}
-                        readOnly
-                        className='inputBox'
-                        onClick={() => setOpen(open => !open)}
-                    />
-                    <div ref={refOne}>
-                        {open &&
-                            <Calendar
-                                date={new Date()}
-                                onchange={handleSelect}
-                                className="calendarElement"
-                            />}
+                <div className='reser-content'>
+                    <p>RESERVATION</p>
+                    <h2><StrokeDesign/>Book a Table<StrokeDesign/></h2>
+                    <p>All booking payment is secured with credit card, 
+                    no charges will be apply for online booking.</p>
+                    <h4>Booking request +90-1234-5678 or fill out the order form</h4>
+                    <div className='reser-container'>
+
+                        <div className='person'>
+                            <Select className='noofperson'
+                                options={options}
+                                placeholder={' 1 Person  '}
+                            />
+                        </div>
+
+
+                        <div className="calendarWrap">
+                            <input
+                                value={calendar}
+                                readOnly
+                                className="inputBox"
+                                onClick={() => setOpen(open => !open)}
+                            />
+                            <div ref={refOne}>
+                                {open &&
+                                    <Calendar
+                                        date={new Date()}
+                                        onChange={handleSelect}
+                                        className="calendarElement"
+                                    />
+                                }
+                            </div>
+                        </div>
+
+
+                        <div className='time'>
+                            <Select options={Time}
+                                placeholder={'Time'}
+                            />
+                        </div>
+
+                        <div className='booknow'>
+                            <button type='submit'>Book Now</button>
+                        </div>
                     </div>
                 </div>
-
-
-                <div className='time'>
-                    <Select options={Time}
-                        placeholder={'Time'}
-                    />
-                </div>
-
-                <div className='booknow'>
-                    <button type='submit'>Book Now</button>
-                </div>
             </div>
-            </div>
-        </div>
         </>
     )
 }

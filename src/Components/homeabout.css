@@ -18,13 +18,36 @@
     margin-bottom: 30px;
     text-align: left;
 }
-button{
-    font-size: 16px;
+
+.homeabout__content button {
     font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    position: relative;
+    border-radius: 5px;
+    padding: 10px 16px;
+    color: black;
+    justify-content: center;
+    background:transparent;
+    /* box-shadow: 5px 4px rgb(100, 97, 97); */
 }
 .homeabout__content button::before{
+    position: absolute;
+    content:"";
+    top:7px;
+    left:7px;
+    z-index: -1;
+    background: rgb(207, 202, 202);
     padding: 20px 67px;
+    border-radius: 5px;
+    transition: 0.5s;
 }
+.homeabout__content button:hover::before {
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
 .chef__img{
     display: flex;
     justify-content: center;

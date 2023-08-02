@@ -2,6 +2,14 @@ import React from "react";
 import './Menu.css';
 import '../../App.css';
 import Menuitem from "./Menuitem";
+import IMG6 from '../assets/img-6.jpg';
+import IMG8 from "../assets/img-8.jpg";
+import IMG9 from "../assets/img-9.jpg";
+import IMG10 from "../assets/img-10.jpg";
+import IMG12 from "../assets/img-12.jpg";
+import IMG18 from "../assets/img-18.jpg";
+import IMG19 from "../assets/img-19.jpg";
+import IMG20 from "../assets/img-20.jpg";
 // import { SVGCustom } from 'svg-fill-custom';
 
 function Menu() {
@@ -35,7 +43,7 @@ function Menu() {
                         />
                     </div>
                 </div> <div className="menu-img">
-                    <img src="assets/img-6.jpg"></img>
+                    <img src={IMG6}></img>
                 </div>
 
             </div>
@@ -43,7 +51,7 @@ function Menu() {
 
             <div className="menu-container">
                 <div className="menu-img">
-                    <img src="assets/img-8.jpg"></img>
+                    <img src={IMG8} />
                 </div>
                 <div className="menu-content">
                     <h2>Sushi Rolls</h2>
@@ -105,14 +113,14 @@ function Menu() {
                     </div>
                 </div>
                 <div className="menu-img">
-                    <img src="assets/img-10.jpg"></img>
+                    <img src={IMG10}></img>
                 </div>
 
             </div>
 
             <div className="menu-container">
                 <div className="menu-img">
-                    <img src="assets/img-9.jpg"></img>
+                    <img src={IMG9}></img>
                 </div>
                 <div className="menu-content">
                     <h2>Udon</h2>
@@ -176,13 +184,13 @@ function Menu() {
                     </div>
                 </div>
                 <div className="menu-img">
-                    <img src="assets/img-12.jpg"></img>
+                    <img src={IMG12}></img>
                 </div>
             </div>
 
             <div className="menu-container">
                 <div className="menu-img">
-                    <img src="assets/img-18.jpg"></img>
+                    <img src={IMG18}></img>
                 </div>
                 <div className="menu-content">
                     <h2>Cocktails</h2>
@@ -257,14 +265,14 @@ function Menu() {
                         </div>
                     </div>
                     <div className="menu-img">
-                        <img src="assets/img-19.jpg"></img>
+                        <img src={IMG19}></img>
                     </div>
                     </div>
 
                 <div className="menu-container">
 
                     <div className="menu-img">
-                        <img src="assets/img-20.jpg"></img>
+                        <img src={IMG20}></img>
                     </div>
                     <div className="menu-content">
                         <h2>Sake</h2>

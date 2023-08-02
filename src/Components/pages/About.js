@@ -3,8 +3,15 @@ import '../../App.css';
 import './About.css';
 import { Link } from 'react-router-dom';
 import StrokeDesign from '../Stroke';
-import { AiFillStar } from "react-icons/ai";
 import PhotoSlider from './Slider';
+import IMG17 from '../assets/img-17.jpg';
+import IMG22 from '../assets/img-22.jpg';
+import IMG23 from '../assets/img-23.jpg';
+import IMG25 from '../assets/img25.jpg';
+import IMG26 from '../assets/img26.jpg';
+import IMG27 from '../assets/img27.jpg';
+import IMG28 from '../assets/img28.jpg';
+import SVGIMG from '../assets/svg1.jpg';
 
 import 'swiper/css';
 function AboutUs() {
@@ -24,7 +31,7 @@ function AboutUs() {
               cabo. Nem odit aut fugit, sedquiac onsequ.</p>
           </div>
           <div className='image'>
-            <img src='assets/img-17.jpg' />
+            <img src={IMG17} />
           </div>
         </div>
 
@@ -34,7 +41,7 @@ function AboutUs() {
           <div className='chef'>
             <div className='chef-content'>
               <div className='chef-info'>
-                <img src="assets/img-22.jpg" />
+                <img src={IMG22}/>
                 <div className='chef-links'>
                   <ul>
                     <li><a href='https://www.facebook.com/'> <i className='fab fa-facebook'></i>Facebook</a></li>
@@ -48,7 +55,7 @@ function AboutUs() {
 
             <div className='chef-content'>
               <div className='chef-info'>
-                <img src="assets/img-23.jpg" />
+                <img src={IMG23} />
                 <div className='chef-links'>
                   <ul>
                     <li><a href='https://www.facebook.com/'> <i className='fab fa-facebook'></i>Facebook</a></li>
@@ -62,7 +69,7 @@ function AboutUs() {
 
             <div className='chef-content'>
               <div className='chef-info'>
-                <img src="assets/img-22.jpg" />
+                <img src={IMG22} />
                 <div className='chef-links'>
                   <ul>
                     <li><a href='https://www.facebook.com/'><i className='fab fa-facebook'></i>Facebook</a></li>
@@ -108,45 +115,55 @@ function AboutUs() {
         <div className='strength'>
           <h2><StrokeDesign />Why Choose Us<StrokeDesign /></h2>
           <div className='strength-container'>
-            <div className='strengths'>
+            
+            <div className='strength-sec'>
+            <div className='strengths-1'>
               <div className='back-img'>
-                <img src='assets/img25.jpg' />
+                <img src={IMG25} />
               </div>
               <div className='over-box'>
-                <img src='' />
+                <img src={SVGIMG} />
                 <h4>Hygienic Food</h4>
               </div>
             </div>
-            <div className='strengths'>
+            <div className='strengths-2'>
               <div className='back-img'>
-                <img src='assets/img26.jpg' />
+                <img src={IMG26} />
               </div>
               <div className='over-box'>
-                <img src='' />
+                <img src={SVGIMG} />
                 <h4>Fresh Environment</h4>
               </div>
             </div>
-            <div className='strengths'>
+            </div>
+
+
+            <div className='strength-sec'>
+            <div className='strengths-3'>
               <div className='back-img'>
-                <img src='assets/img27.jpg' />
+                <img src={IMG27} />
               </div>
               <div className='over-box'>
-                <img src='assets/svg1.svg' />
+                <img src={SVGIMG} />
                 <h4>Skilled Chefs</h4>
               </div>
             </div>
-            <div className='strengths'>
+            <div className='strengths-4'>
               <div className='back-img'>
-                <img src='assets/img28.jpg' />
+                <img src={IMG28} />
               </div>
               <div className='over-box'>
-                <img src='' />
+                <img src={SVGIMG} />
                 <h4>Event & Party</h4>
               </div>
             </div>
-          </div>
+            </div>
 
+
+          </div>
         </div>
+
+
         <div className='reviews'>
           <h2><StrokeDesign />Our Reviews<StrokeDesign /></h2>
           <div className='slider'>

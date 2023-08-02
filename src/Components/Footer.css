@@ -47,9 +47,10 @@ form {
     border: 1px solid #fff;
 }
 button.footer-btn{
+    padding: 8px 20px;
     color: white;
+    background-color: black;
     border:none;
-    border:1px solid grey;
     border-radius: 0%;
     outline: none;
 }

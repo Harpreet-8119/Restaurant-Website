@@ -7,7 +7,7 @@
 } */
 
 .hero-container{
-    background: url('image/img1.jpg');
+    background: url('./assets/img1.jpg');
     /* center center */
     background-size: cover;  
     background-repeat: no-repeat;

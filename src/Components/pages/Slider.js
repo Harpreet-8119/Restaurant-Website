@@ -4,6 +4,13 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import '../../App.css'; 
 import './Slider.css';
+import { AiFillStar } from "react-icons/ai";
+import IMGBG from '../assets/bg-img.jpg'
+import PRO1 from '../assets/profile1.jpg'
+import PRO2 from '../assets/profile2.jpg'
+import PRO3 from '../assets/profile3.jpg'
+
+
 
 const PhotoSlider = () => {
     const settings = {
@@ -16,7 +23,14 @@ const PhotoSlider = () => {
       autoplaySpeed: 2000,
       responsive: [
         {
-          breakpoint: 768,
+          breakpoint: 724,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          }
+        },
+        {
+          breakpoint: 1024,
           settings: {
             slidesToShow: 2,
             slidesToScroll: 1,
@@ -34,28 +48,125 @@ const PhotoSlider = () => {
   
     return (
       <Slider {...settings}>
-        <div>
-          <img src="assets/img-24.jpg" alt="Image 1" />
+        <div  className='slider-container'>
+        <img src={IMGBG} alt="Image 4" />
+        <div className='review-content'>
+            <div className='profile'>
+              <ul className='text-1'>
+                <li><img src={PRO1}/></li>
+              </ul>
+              <ul className='text-2'>
+                <li><h2>Niyuki</h2></li>
+                <li>Nagoya</li>
+              </ul>
+            </div>
+            <div className='comment'>
+            <p> Hygienic food & fresh environment, everyone had a wonderful delight experience. 
+              It was FABULOUS! great experience at The Sushi Restaurant.</p>
+              <span><AiFillStar /><AiFillStar /><AiFillStar /><AiFillStar /><AiFillStar /></span>
+          </div>      
         </div>
-        <div>
-          <img src="assets/img-20.jpg" alt="Image 2" />
         </div>
-        <div>
-          <img src="assets/img-21.jpg" alt="Image 3" />
+
+
+        <div  className='slider-container'>
+        <img src={IMGBG} alt="Image 4" />
+        <div className='review-content'>
+            <div className='profile'>
+              <ul className='text-1'>
+                <li><img src={PRO3}/></li>
+              </ul>
+              <ul className='text-2'>
+              <li><h2>Matsumoto</h2></li>
+                <li>Ichinomiya</li>
+              </ul>
+            </div>
+            <div className='comment'>
+            <p> Special treat to dine, It was a wow experience food was really delicious! 
+          outstanding dinner made by Master chef, food experience was unforgettable!</p>
+              <span><AiFillStar /><AiFillStar /><AiFillStar /><AiFillStar /><AiFillStar /></span>
+          </div>
+          </div>          
+          </div>          
+
+        <div className='slider-container'>
+        <img src={IMGBG} alt="Image 4" />
+        <div className='review-content'>
+            <div className='profile'>
+              <ul className='text-1'>
+                <li><img src={PRO2}/></li>
+              </ul>
+              <ul className='text-2'>
+              <li><h2>Yuika</h2></li>
+                <li>Toyota</li>
+              </ul>
+            </div>
+            <div className='comment'>
+            <p>The taste of food was really amazing, Wow! outstanding dinner 
+          made by Master chef of Restaurant, I never forget this delicious food experience.</p>
+              <span><AiFillStar /><AiFillStar /><AiFillStar /><AiFillStar /><AiFillStar /></span>
+          </div>
+          </div>        
         </div>
-        <div>
-          <img src="assets/img-23.jpg" alt="Image 4" />
+
+        <div  className='slider-container'>
+        <img src={IMGBG} alt="Image 4" />
+        <div className='review-content'>
+            <div className='profile'>
+              <ul className='text-1'>
+                <li><img src={PRO1}/></li>
+              </ul>
+              <ul className='text-2'>
+                <li><h2>Niyuki</h2></li>
+                <li>Nagoya</li>
+              </ul>
+            </div>
+            <div className='comment'>
+            <p> Hygienic food & fresh environment, everyone had a wonderful delight experience. 
+              It was FABULOUS! great experience at The Sushi Restaurant.</p>
+              <span><AiFillStar /><AiFillStar /><AiFillStar /><AiFillStar /><AiFillStar /></span>
+          </div>      
         </div>
-        <div>
-          <img src="assets/img-22.jpg" alt="Image 5" />
         </div>
-        <div>
-          <img src="assets/img-18.jpg" alt="Image 6" />
+
+        <div  className='slider-container'>
+        <img src={IMGBG} alt="Image 4" />
+        <div className='review-content'>
+            <div className='profile'>
+              <ul className='text-1'>
+                <li><img src={PRO3}/></li>
+              </ul>
+              <ul className='text-2'>
+                <li><h2>Matsumoto</h2></li>
+                <li>Ichinomiya</li>
+              </ul>
+            </div>
+            <div className='comment'>
+            <p> Special treat to dine, It was a wow experience food was really delicious! 
+          outstanding dinner made by Master chef, food experience was unforgettable!</p>
+              <span><AiFillStar /><AiFillStar /><AiFillStar /><AiFillStar /><AiFillStar /></span>
+          </div>
+          </div>          
+          </div>    
+          <div className='slider-container'>
+        <img src={IMGBG} alt="Image 4" />
+        <div className='review-content'>
+            <div className='profile'>
+              <ul className='text-1'>
+                <li><img src={PRO2}/></li>
+              </ul>
+              <ul className='text-2'>
+                <li><h2>Yuika</h2></li>
+                <li>Toyota</li>
+              </ul>
+            </div>
+            <div className='comment'>
+            <p>The taste of food was really amazing, Wow! outstanding dinner 
+          made by Master chef of Restaurant, I never forget this delicious food experience.</p>
+              <span><AiFillStar /><AiFillStar /><AiFillStar /><AiFillStar /><AiFillStar /></span>
+          </div>
+          </div>        
         </div>
-        <div>
-          <img src="assets/img-19.jpg" alt="Image 7" />
-        </div>
-        {/* Add more images here */}
       </Slider>
     );
   };
