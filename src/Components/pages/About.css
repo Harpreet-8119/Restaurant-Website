@@ -45,6 +45,7 @@
 .chef-content {
     transition: all 30s;
     justify-content: center;
+    
 }
 
 .chef-content .chef-links {
@@ -91,7 +92,7 @@
 .chef-info img {
     width: 270px;
     background-position: center;
-    object-fit: contain;
+    object-fit: cover;
     background-repeat: no-repeat;
     background-size: cover;
     border: 2px solid transparent;
@@ -152,11 +153,12 @@ li {
     position: relative;
     width: 250px;
     height: 380px;
+    
 }
 
 .over-box {
-    background: rgb(131, 131, 131);
-    color: black;
+    background: black;
+    opacity: 0.6;
     width: 250px;
     padding: 20px;
     position: absolute;
@@ -166,9 +168,13 @@ li {
 .over-box img {
     width: 80px;
     height: 80px;
-    background: rgb(131, 131, 131);
+    background: black;
 }
-
+.over-box h4{
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 5px;
+}
 
 
 .slider img {
@@ -177,7 +183,7 @@ li {
 
 }
 .reviews h2{
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 .reviews svg {
     color: goldenrod;
@@ -199,8 +205,8 @@ li {
     }
 
     .about__container h2 {
-        font-size: 24px;
-        margin-bottom: 30px;
+        font-size: 18px;
+        margin-bottom: 20px;
     }
 
     .aboutus {
@@ -210,7 +216,9 @@ li {
     .aboutus img {
         width: 100%;
     }
-
+    .aboutus p{
+        margin:20px 0px;
+    }
     .chef {
         display: block;
         margin-bottom: 60px;
@@ -222,11 +230,18 @@ li {
     .chef-info {
         width: 100%;
     }
+    .chef-info img{
+        width:100%;
+        height: 350px;
+        margin-bottom: 10px;
+        object-fit: fill;
+    }
     .chef-content .chef-links ul {
         align-items: center;
     }
     .about-us {
         display: block;
+        margin-bottom: 50px;
     }
     .about-us p {
         font-size: 18px;
@@ -241,7 +256,14 @@ li {
     }
 
     .strength-sec {
+        width: 100%;
         display: inline-block;
+    }
+    .strength-sec img{
+        width: 100%;
+    }
+    .strength-sec .over-box{
+        width: 100%;
     }
     .strength-sec h2{
         margin-bottom: 10px;
@@ -256,5 +278,79 @@ li {
 
     .over-box {
         display: block;
+    }
+    .reviews h2{
+        margin-bottom: 30px;
+    }
+   
+}
+
+@media screen and (max-width: 920px) and (min-width:768px){
+    .about__container {
+        padding: 1rem 3rem;
+    }
+    .aboutus{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+.aboutus .image{
+width: 50%;
+}
+.aboutus img{
+width: 300px;
+height: 350px;
+}
+.chef-content{
+    width: 100%;
+    justify-content: space-evenly;
+}
+.chef-info {
+    width: 240px;
+}
+.chef-info img{
+    width:100%;
+}
+.strength-container{
+    display: block;
+}
+.strength-sec{
+    margin-bottom: 30px;
+}
+.strengths-1{
+    margin-top:0px;
+}
+.strengths-3{
+    margin-top: 0px;
+}
+.back-img img{
+    width:320px;
+    height: 350px;
+}
+.over-box{
+    width:320px;
+    height: 132px;
+}
+.reviews h2{
+    margin-bottom: 40px;
+
+}
+}
+@media screen and (max-width:1024px) and (min-width:920px){
+    .strength-container{
+        display: block;
+    }
+    .strength-sec{
+        margin-bottom: 30px;
+    }
+    .strengths-1{
+        margin-top:0px;
+    }
+    .strengths-3{
+        margin-top: 0px;
+    }
+    .reviews h2{
+        margin-bottom: 40px;
+    
     }
 }

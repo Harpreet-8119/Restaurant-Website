@@ -1,7 +1,7 @@
 import React from 'react';
 import '../App.css';
 import './homeabout.css';
-import IMG13 from './assets/img-13.jpg';
+import IMG13 from './assets/img-13.webp';
 function Homeabout() {
     return (
         <>

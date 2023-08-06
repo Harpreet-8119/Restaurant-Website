@@ -5,7 +5,7 @@ import 'slick-carousel/slick/slick-theme.css';
 import '../../App.css'; 
 import './Slider.css';
 import { AiFillStar } from "react-icons/ai";
-import IMGBG from '../assets/bg-img.jpg'
+import IMGBG from '../assets/bg-img.webp'
 import PRO1 from '../assets/profile1.jpg'
 import PRO2 from '../assets/profile2.jpg'
 import PRO3 from '../assets/profile3.jpg'

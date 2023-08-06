@@ -37,15 +37,13 @@ function Footer() {
                                 <h2>Opening hours</h2>
                                 <Link to="/">Mon - Fri: 9:00 am-22:00 pm</Link>
                                 <Link to="/">Sat - Sun: 9:00 am-24:00 pm</Link>
-
                             </div>
                             <hr></hr>
                             <div className='footer-links-items'>
                                 <h2>Visit Us</h2>
                                 <Link to="/">Sushi Restaurant, ABC City</Link>
-                                <Link to="/">100200 Tokyo, 123-3456-7658</Link>
+                                <Link to="/">100200 Aichi, 123-3456-7658</Link>
                                 <Link to="/">sushi-reservation@gmail.com</Link>
-
                             </div>
                             <hr></hr>
                             <div className='footer-links-items'>

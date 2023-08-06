@@ -4,14 +4,16 @@ import './About.css';
 import { Link } from 'react-router-dom';
 import StrokeDesign from '../Stroke';
 import PhotoSlider from './Slider';
-import IMG17 from '../assets/img-17.jpg';
-import IMG22 from '../assets/img-22.jpg';
-import IMG23 from '../assets/img-23.jpg';
-import IMG25 from '../assets/img25.jpg';
-import IMG26 from '../assets/img26.jpg';
-import IMG27 from '../assets/img27.jpg';
-import IMG28 from '../assets/img28.jpg';
+import Footer from "../Footer";
+import IMG17 from '../assets/img-17.webp';
+import IMG22 from '../assets/img-22.webp';
+import IMG23 from '../assets/img-23.webp';
+import IMG25 from '../assets/img25.webp';
+import IMG26 from '../assets/img26.webp';
+import IMG27 from '../assets/img27.webp';
+import IMG28 from '../assets/img28.webp';
 import SVGIMG from '../assets/svg1.jpg';
+import ICON1 from '../assets/diet.png';
 
 import 'swiper/css';
 function AboutUs() {
@@ -122,7 +124,7 @@ function AboutUs() {
                 <img src={IMG25} />
               </div>
               <div className='over-box'>
-                <img src={SVGIMG} />
+                <img src={ICON1} />
                 <h4>Hygienic Food</h4>
               </div>
             </div>
@@ -169,8 +171,11 @@ function AboutUs() {
           <div className='slider'>
             <PhotoSlider />
           </div>
+
+
         </div>
       </div>
+      <Footer/>
     </>
   )
 }

@@ -2,7 +2,7 @@ import react from 'react';
 import './Homemenu.css';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
-import IMG14 from './assets/img-14.jpg';
+import IMG14 from './assets/img-14.webp';
 function Homemenu() {
     return (
         <>

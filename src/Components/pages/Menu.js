@@ -2,12 +2,13 @@ import React from "react";
 import './Menu.css';
 import '../../App.css';
 import Menuitem from "./Menuitem";
-import IMG6 from '../assets/img-6.jpg';
-import IMG8 from "../assets/img-8.jpg";
-import IMG9 from "../assets/img-9.jpg";
-import IMG10 from "../assets/img-10.jpg";
-import IMG12 from "../assets/img-12.jpg";
-import IMG18 from "../assets/img-18.jpg";
+import Footer from "../Footer";
+import IMG6 from '../assets/img-6.webp';
+import IMG8 from "../assets/img-8.webp";
+import IMG9 from "../assets/img-9.webp";
+import IMG10 from "../assets/img-10.webp";
+import IMG12 from "../assets/img-12.webp";
+import IMG18 from "../assets/img-18.webp";
 import IMG19 from "../assets/img-19.jpg";
 import IMG20 from "../assets/img-20.jpg";
 // import { SVGCustom } from 'svg-fill-custom';
@@ -309,6 +310,7 @@ function Menu() {
                         </div>
                     </div>
                 </div>
+                <Footer/>
             </div>
         
 

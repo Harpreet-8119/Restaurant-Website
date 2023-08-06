@@ -1,11 +1,11 @@
 import React from 'react';
 import CardItem from './CardItem';
 import './Cards.css';
-import IMG01 from './assets/img01.jpg';
-import IMG02 from './assets/img02.jpg';
-import IMG03 from './assets/img03.jpg';
-import IMG04 from './assets/img04.jpg';
-import IMG05 from './assets/img05.jpg';
+import IMG01 from './assets/img01.webp';
+import IMG02 from './assets/img02.webp';
+import IMG03 from './assets/img03.webp';
+import IMG04 from './assets/img04.webp';
+import IMG05 from './assets/img05.webp';
 function Cards() {
   return (
     <div className='cards'>

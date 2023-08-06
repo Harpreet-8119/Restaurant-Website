@@ -3,7 +3,7 @@ import './booking.css';
 import '../App.css';
 import Reservation from './pages/Reservation';
 import StrokeDesign from './Stroke';
-import IMG11 from './assets/img-11.jpg';
+import IMG11 from './assets/img-11.webp';
 function Booking() {
     return (
         <>
