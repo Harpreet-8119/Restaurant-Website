@@ -22,6 +22,14 @@
     padding: 10rem 6rem;
 
 }
+.heading .designstroke{
+    display: block;
+}
+.heading h2 {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
 
 .reser-head .heading {
     opacity: 1;
@@ -54,9 +62,14 @@
 }
 
 .reser-content h2 {
+    display: flex;
+    justify-content: center;
     font-size: 40px;
     font-weight: 500;
     margin-bottom: 10px;
+    text-decoration:none;
+    text-underline-offset: 0px;
+
 }
 
 .reser-content p {
@@ -121,9 +134,11 @@ span.css-1u9des2-indicatorSeparator {
     display: inline-block;
     position: relative;
 }
+
 .css-13cymwt-control {
     text-align: left;
 }
+
 .calendarElement {
     position: absolute;
     left: 50%;
@@ -173,6 +188,7 @@ iframe {
 }
 
 .right h2 {
+    text-shadow:2px 2px 4px grey;
     margin-bottom: 30px;
     font-size: 40px;
 }
@@ -210,21 +226,25 @@ iframe {
         font-weight: 500;
 
     }
-    .calendarWrap{
+
+    .calendarWrap {
         width: 100%;
     }
+
     .reser-content {
         padding: 2rem 3rem;
         text-align: center;
     }
-.reser-content p{
-    margin-bottom: 10px;
-}
+
+    .reser-content p {
+        margin-bottom: 10px;
+    }
+
     .reser-content h2 {
         font-size: 30px;
         margin: 20px 0px;
-        text-decoration:underline 0.5px solid grey;
-        text-underline-offset:10px;
+        text-decoration: underline 0.5px solid grey;
+        text-underline-offset: 10px;
     }
 
     .reser-content h4 {
@@ -291,7 +311,7 @@ iframe {
 
 }
 
-@media screen and (max-width: 920px) and (min-width:768px)  {
+@media screen and (max-width: 920px) and (min-width:768px) {
     .booking-section {
         width: 100%;
         padding: 50px 100px;
@@ -300,11 +320,11 @@ iframe {
     .reser-content {
         padding: 1rem 3rem;
     }
+
     .reser-content h2 {
         margin-top: 5px;
-        text-decoration:underline 1px solid grey;
-        text-underline-offset:10px;
     }
+
     .reser-container {
         width: 100%;
         margin-bottom: 5px;
@@ -316,18 +336,22 @@ iframe {
         margin: 5px 0px;
     }
 
-    .calendarWrap{
+    .calendarWrap {
         width: 100%;
     }
-    .person{
+
+    .person {
         margin-bottom: 10px;
     }
+
     .booknow {
         margin-top: 20px;
     }
-.booknow button{
-    font-size: 30px;
-}
+
+    .booknow button {
+        font-size: 30px;
+    }
+
     .location {
         padding: 3rem 3rem;
         display: flex;
@@ -344,10 +368,12 @@ iframe {
         letter-spacing: 1.5px;
     }
 }
+
 @media screen and (max-width:1024px) and (min-width:920px) {
-    .booking-section{
+    .booking-section {
         padding: 50px;
     }
+
     .location {
         padding: 3rem;
         display: flex;

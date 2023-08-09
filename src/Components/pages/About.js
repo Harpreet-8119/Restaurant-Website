@@ -5,6 +5,10 @@ import { Link } from 'react-router-dom';
 import StrokeDesign from '../Stroke';
 import PhotoSlider from './Slider';
 import Footer from "../Footer";
+import {IoFastFood} from 'react-icons/io5';
+import {BiSolidParty} from 'react-icons/bi';
+import {GiChefToque} from 'react-icons/gi';
+import {MdFoodBank} from 'react-icons/md';
 import IMG17 from '../assets/img-17.webp';
 import IMG22 from '../assets/img-22.webp';
 import IMG23 from '../assets/img-23.webp';
@@ -12,17 +16,17 @@ import IMG25 from '../assets/img25.webp';
 import IMG26 from '../assets/img26.webp';
 import IMG27 from '../assets/img27.webp';
 import IMG28 from '../assets/img28.webp';
-import SVGIMG from '../assets/svg1.jpg';
-import ICON1 from '../assets/diet.png';
+
 
 import 'swiper/css';
+import { icons } from 'react-icons';
 function AboutUs() {
   return (
     <>
       <div className='about__container'>
         <div className='aboutus'>
           <div className='content'>
-            <h2><StrokeDesign />About Us<StrokeDesign /></h2>
+            <h2><div className='designstroke'><StrokeDesign /></div>About Us<div className='designstroke'><StrokeDesign /></div></h2>
             <p>Lorem ipsum dolor sit amet, consecte turmi neads en se se adipisicing elit,
               sed do eiusm od tempor ens inc a didunt ut labore et dolo re magna aliqua.
               Ut enim ad minim veniav, quis nostrud exerci se reprehenderit nvolup.
@@ -39,7 +43,7 @@ function AboutUs() {
 
 
         <div className='ourchef'>
-          <h2><StrokeDesign />Meet Our Chef's<StrokeDesign /></h2>
+          <h2><div className='designstroke'><StrokeDesign /></div>Meet Our Chef's<div className='designstroke'><StrokeDesign /></div></h2>
           <div className='chef'>
             <div className='chef-content'>
               <div className='chef-info'>
@@ -115,16 +119,16 @@ function AboutUs() {
         </div>
 
         <div className='strength'>
-          <h2><StrokeDesign />Why Choose Us<StrokeDesign /></h2>
+          <h2><div className='designstroke'><StrokeDesign /></div>Why Choose Us<div className='designstroke'><StrokeDesign /></div></h2>
           <div className='strength-container'>
-            
+          
             <div className='strength-sec'>
             <div className='strengths-1'>
               <div className='back-img'>
                 <img src={IMG25} />
               </div>
               <div className='over-box'>
-                <img src={ICON1} />
+              <div className='icon'><IoFastFood/></div>
                 <h4>Hygienic Food</h4>
               </div>
             </div>
@@ -133,7 +137,7 @@ function AboutUs() {
                 <img src={IMG26} />
               </div>
               <div className='over-box'>
-                <img src={SVGIMG} />
+              <div className='icon'><MdFoodBank/></div>
                 <h4>Fresh Environment</h4>
               </div>
             </div>
@@ -146,7 +150,7 @@ function AboutUs() {
                 <img src={IMG27} />
               </div>
               <div className='over-box'>
-                <img src={SVGIMG} />
+              <div className='icon'><GiChefToque/></div>
                 <h4>Skilled Chefs</h4>
               </div>
             </div>
@@ -155,7 +159,7 @@ function AboutUs() {
                 <img src={IMG28} />
               </div>
               <div className='over-box'>
-                <img src={SVGIMG} />
+              <div className='icon'><BiSolidParty/></div>
                 <h4>Event & Party</h4>
               </div>
             </div>
@@ -167,7 +171,7 @@ function AboutUs() {
 
 
         <div className='reviews'>
-          <h2><StrokeDesign />Our Reviews<StrokeDesign /></h2>
+          <h2><div className='designstroke'><StrokeDesign /></div>Our Reviews<div className='designstroke'><StrokeDesign /></div></h2>
           <div className='slider'>
             <PhotoSlider />
           </div>

@@ -94,7 +94,7 @@ function Reservation() {
             <div className='main-container'>
                 <div className='reser-head'>
                     <div className='heading'>
-                        <h2><StrokeDesign />Reservation<StrokeDesign /></h2>
+                        <h2><div className='designstroke'><StrokeDesign /></div>Reservation<div className='designstroke'><StrokeDesign /></div></h2>
                         <p>BOOK YOUR TABLE</p>
                     </div>
                 </div>
@@ -102,7 +102,7 @@ function Reservation() {
 
                 <div className='reser-content'>
                     <p>RESERVATION</p>
-                    <h2>Book a Table</h2>
+                    <h2><div className='designstroke'><StrokeDesign /></div>Book a Table<div className='designstroke'><StrokeDesign /></div></h2>
                     <p>All booking payment is secured with credit card,
                         no charges will be apply for online booking.</p>
                     <h4>Booking request +90-1234-5678 or fill out the order form</h4>
@@ -178,7 +178,6 @@ function Reservation() {
                         </div>
                     </div>
                 </div>
-                <Footer />
             </div>
         </>
     )
