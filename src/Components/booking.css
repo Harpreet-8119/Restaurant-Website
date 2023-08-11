@@ -32,10 +32,16 @@
     padding: 5px;
    text-decoration: none;
    text-underline-offset: 0px;
+   text-align: center;
+    font-size: 22px;
+    font-weight: 500;
+    margin-top: 5px;
+    font-family: 'Lumanosimo', cursive;
 }
 
 .event__detail p {
-    margin-top: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     line-height: 1.5;
 }
 
@@ -126,11 +132,6 @@
 
     .event__detail p {
         font-size: 14px;
-    }
-
-    .event__detail:hover {
-        transform: scale(1.1);
-
     }
 
     .img_events {

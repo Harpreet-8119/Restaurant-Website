@@ -20,15 +20,21 @@
     box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.2);
     object-fit: contain;
 }
-
+.hero-container .heading{
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    
+}
 .hero-container h1{
     color: #fff;
-    font-size: 80px;
+    font-size: 60px;
     font-weight: 300;
-    margin-top: -120px;
+    margin-top: 0px;
     font-family: 'Lumanosimo', cursive;
+    overflow: hidden;
 }
-.hero-container >p{
+.hero-container p{
     margin-top: 8px;
     color: #fff;
     font-size: 22px;
@@ -46,20 +52,35 @@
 /* .fa-play-circle{
     margin-left: 4px;
 } */
-@media screen and (max-width: 960px){
+/* @media screen and (max-width: 960px){
     .hero-container >h1{
         font-size: 70px;
         margin-top: -150px;
     }
-}
-@media screen and (max-width: 768px) {
+} */
+@media screen and (max-width: 624px) {
+    .hero-section{
+        width: 100%;
+        height: 100%;
+    }
+    .hero-container{
+        padding: 4rem 8rem 2rem 2rem;
+        background: url('./assets/respon-bg.jpg');
+        object-fit: cover;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 540px;
+        box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.2);
+
+    }
     .hero-container >h1{
-        font-size: 42px;
-        margin-top: -10px;
+        font-size: 34px;
+        margin-top: -70px;
     }
     .hero-container>p{
         font-size: 18px;
-        margin-top:10px;
+        margin-top:15px;
     }
     .btn-mobile{
         display: block;
@@ -67,6 +88,31 @@
     }
     .btn{
         width: 100%;
-        
+        margin:0px;
+    }
+    .hero-btns{
+        margin-top:10px;
+        font-size: 19px;
+    }
+    .hero-btns .btn{
+        font-size: 19px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width:820px){
+    .hero-container{
+        background: url('./assets/respon-bg.jpg');
+        object-fit: cover;
+        background-size: cover;
+        padding: 2rem 12rem 2rem 2rem;
+    }
+    .hero-btns .btn{
+        font-size: 30px;
+    }
+    .hero-container >h1{
+        margin-top: -70px;
+    }
+    .hero-container>p{
+        margin-top:15px;
     }
 }

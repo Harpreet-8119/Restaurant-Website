@@ -16,37 +16,45 @@ import IMG25 from '../assets/img25.webp';
 import IMG26 from '../assets/img26.webp';
 import IMG27 from '../assets/img27.webp';
 import IMG28 from '../assets/img28.webp';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 
 
 import 'swiper/css';
 import { icons } from 'react-icons';
 function AboutUs() {
+  useEffect(() =>{
+    Aos.init({duration:2000});
+      },[]);
   return (
     <>
-      <div className='about__container'>
-        <div className='aboutus'>
+      <div className='about__container' >
+        <div className='aboutus' data-aos="fade-up">
           <div className='content'>
-            <h2><div className='designstroke'><StrokeDesign /></div>About Us<div className='designstroke'><StrokeDesign /></div></h2>
-            <p>Lorem ipsum dolor sit amet, consecte turmi neads en se se adipisicing elit,
+            <h2 data-aos="flip-left" ><div className='designstroke'><StrokeDesign /></div>About Us<div className='designstroke'><StrokeDesign /></div></h2>
+            <p className='chef__img'  data-aos="zoom-in-right">Lorem ipsum dolor sit amet, consecte turmi neads en se se adipisicing elit,
               sed do eiusm od tempor ens inc a didunt ut labore et dolo re magna aliqua.
               Ut enim ad minim veniav, quis nostrud exerci se reprehenderit nvolup.
             </p>
-            <p> Aperiam, eaque ipsa quae ab illo inventorm dom se ns verit atis et
+            <p className='chef__img'  data-aos="zoom-in-right" > Aperiam, eaque ipsa quae ab illo inventorm dom se ns verit atis et
               quasi architecto beat ae vitae dicta sunt expli cabo. Nem odit aut fugit,
               sed quia consequun tur magni dolors. res eos Neque porro quisquam and en expli
               cabo. Nem odit aut fugit, sedquiac onsequ.</p>
           </div>
-          <div className='image'>
+          <div className='image chef__img'  data-aos="zoom-in-left"
+     data-aos-anchor-placement="top-bottom">
             <img src={IMG17} />
           </div>
         </div>
 
 
         <div className='ourchef'>
-          <h2><div className='designstroke'><StrokeDesign /></div>Meet Our Chef's<div className='designstroke'><StrokeDesign /></div></h2>
+          <h2 data-aos="flip-left" ><div className='designstroke'><StrokeDesign /></div>Meet Our Chef's<div className='designstroke'><StrokeDesign /></div></h2>
           <div className='chef'>
-            <div className='chef-content'>
-              <div className='chef-info'>
+            <div className='chef-content' data-aos="fade-up-right"
+     data-aos-duration="3000">
+              <div className='chef-info' >
                 <img src={IMG22}/>
                 <div className='chef-links'>
                   <ul>
@@ -59,7 +67,8 @@ function AboutUs() {
             </div>
 
 
-            <div className='chef-content'>
+            <div className='chef-content' data-aos="fade-up"
+     data-aos-duration="3000">
               <div className='chef-info'>
                 <img src={IMG23} />
                 <div className='chef-links'>
@@ -73,7 +82,8 @@ function AboutUs() {
             </div>
 
 
-            <div className='chef-content'>
+            <div className='chef-content' data-aos="fade-up-left"
+     data-aos-duration="3000">
               <div className='chef-info'>
                 <img src={IMG22} />
                 <div className='chef-links'>
@@ -89,7 +99,8 @@ function AboutUs() {
         </div>
 
 
-        <div className='about-us'>
+        <div className='about-us' data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom">
           <div className='about-order'>
             <ul>
               <li><h2>150+</h2></li>
@@ -119,20 +130,20 @@ function AboutUs() {
         </div>
 
         <div className='strength'>
-          <h2><div className='designstroke'><StrokeDesign /></div>Why Choose Us<div className='designstroke'><StrokeDesign /></div></h2>
+          <h2 data-aos="flip-left"><div className='designstroke'><StrokeDesign /></div>Why Choose Us<div className='designstroke'><StrokeDesign /></div></h2>
           <div className='strength-container'>
           
-            <div className='strength-sec'>
-            <div className='strengths-1'>
+            <div className='strength-sec' >
+            <div className='strengths-1'data-aos="zoom-in-down" >
               <div className='back-img'>
                 <img src={IMG25} />
               </div>
-              <div className='over-box'>
+              <div className='over-box' >
               <div className='icon'><IoFastFood/></div>
                 <h4>Hygienic Food</h4>
               </div>
             </div>
-            <div className='strengths-2'>
+            <div className='strengths-2' data-aos="zoom-in-down">
               <div className='back-img'>
                 <img src={IMG26} />
               </div>
@@ -145,7 +156,7 @@ function AboutUs() {
 
 
             <div className='strength-sec'>
-            <div className='strengths-3'>
+            <div className='strengths-3' data-aos="zoom-in-down">
               <div className='back-img'>
                 <img src={IMG27} />
               </div>
@@ -154,7 +165,7 @@ function AboutUs() {
                 <h4>Skilled Chefs</h4>
               </div>
             </div>
-            <div className='strengths-4'>
+            <div className='strengths-4' data-aos="zoom-in-down">
               <div className='back-img'>
                 <img src={IMG28} />
               </div>
@@ -170,9 +181,9 @@ function AboutUs() {
         </div>
 
 
-        <div className='reviews'>
-          <h2><div className='designstroke'><StrokeDesign /></div>Our Reviews<div className='designstroke'><StrokeDesign /></div></h2>
-          <div className='slider'>
+        <div className='reviews' >
+          <h2 data-aos="flip-left"><div className='designstroke'><StrokeDesign /></div>Our Reviews<div className='designstroke'><StrokeDesign /></div></h2>
+          <div className='slider' data-aos="zoom-in">
             <PhotoSlider />
           </div>
 

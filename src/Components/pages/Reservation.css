@@ -29,6 +29,11 @@
     display: flex;
     text-align: center;
     justify-content: center;
+    font-size: 28px;
+    font-weight: 500;
+    margin-top: 5px;
+    margin-bottom: 1rem;
+    font-family: 'Lumanosimo', cursive;
 }
 
 .reser-head .heading {
@@ -39,6 +44,7 @@
 .reser-head h2 {
     font-size: 50px;
     font-weight: 500;
+    
 }
 
 /* .reser-head img {
@@ -64,11 +70,14 @@
 .reser-content h2 {
     display: flex;
     justify-content: center;
-    font-size: 40px;
-    font-weight: 500;
-    margin-bottom: 10px;
     text-decoration:none;
     text-underline-offset: 0px;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 500;
+    margin-top: 5px;
+    margin-bottom: 1rem;
+    font-family: 'Lumanosimo', cursive;
 
 }
 
@@ -304,7 +313,7 @@ iframe {
     }
 
     .right {
-        padding: 50px 50px;
+        padding: 50px 26px;
         letter-spacing: 1.5px;
         margin-bottom: 30px;
     }

@@ -3,20 +3,28 @@ import { Button } from './Button';
 import { Link } from 'react-router-dom';
 import './Footer.css';
 import IMGLOGO from './assets/logo.jpg';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 function Footer() {
+    useEffect(() => {
+        Aos.init({ duration: 1000 });
+    }, []);
     return (
         <div className='footer-main'>
-            <div className='footer-content-text'>
+            <div className='footer-content-text' data-aos="fade-up"
+                data-aos-anchor-placement="top-bottom">
                 <p >
                     A good restaurant is like a vacation; it transports you,
                     and it becomes a lot more than just about the food.
                 </p>
             </div>
             <div className='footer-container'>
-                <div className='footer-flex'>
-                <h2 className='footer-content-heading'>
-                            Contact Us
-                        </h2>
+                <div className='footer-flex' data-aos="fade-up"
+                    data-aos-anchor-placement="top-bottom">
+                    <h2 className='footer-content-heading'>
+                        Contact Us
+                    </h2>
                     <section className='footer-content'>
                         <div className='input-areas'>
                             <form>
@@ -30,7 +38,8 @@ function Footer() {
                         </div>
                     </section>
                 </div>
-                <div className='footer-flex'>
+                <div className='footer-flex' data-aos="fade-up"
+                    data-aos-anchor-placement="top-bottom">
                     <div className='footer-links'>
                         <div className='footer-links-wrapper'>
                             <div className='footer-links-items'>
@@ -80,10 +89,12 @@ function Footer() {
                         <div className='social-media-wrap'>
                             <div className='footer-logo'>
                                 <Link className='social-logo'>
-                                <img src={IMGLOGO}/>
+                                    <img src={IMGLOGO} />
                                 </Link>
                             </div>
+                            <div className='website-rights'>
                             <small className='website-rights'>Sushi @ 2023</small>
+                        </div>
                         </div>
                     </div>
                 </div>

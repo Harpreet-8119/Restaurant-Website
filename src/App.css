@@ -10,6 +10,9 @@
 hr.line {
   border: 1px solid rgb(41, 41, 40);
 }
+hr.lines{
+  border: 1px solid #242424;
+}
 svg.css-tj5bde-Svg {
   display: none;
   padding: 0px;

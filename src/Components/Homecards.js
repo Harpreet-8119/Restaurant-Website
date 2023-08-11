@@ -2,6 +2,7 @@ import React from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import StrokeDesign from './Stroke';
 import '../App.css';
 import './Homecards.css';
 import IMGBG1 from './assets/IMGS2.jpg';
@@ -11,9 +12,15 @@ import IMGBG4 from './assets/IMGS4.jpg';
 import IMGBG5 from './assets/IMGS5.jpg';
 import IMGBG6 from './assets/IMGS6.jpg';
 import IMGBG7 from './assets/IMGS7.jpg';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 
 
 const Homecards = () => {
+    useEffect(() =>{
+        Aos.init({duration:2000});
+          },[]);
     const settings = {
         dots:false,
         infinite: true,
@@ -51,8 +58,8 @@ const Homecards = () => {
         <>
         <div className='Main-slidercontainer'>      
         <div className='homeslider'>
-        <h3>Popular Item</h3>
-            <h2>Popular Food Item</h2>
+        <p data-aos="zoom-in">Popular Item</p>
+            <h2 data-aos="flip-left"><div className='designstroke'><StrokeDesign /></div>Popular Food Item<div className='designstroke'><StrokeDesign /></div></h2>
         <Slider {...settings}>
             <div className='slider-img'>
                 <img src={IMGBG1} alt="Image 1" />

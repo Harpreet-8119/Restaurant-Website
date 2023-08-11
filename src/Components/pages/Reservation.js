@@ -5,15 +5,17 @@ import { Link } from 'react-router-dom';
 import format from 'date-fns/format';
 import Select from 'react-select';
 import StrokeDesign from '../Stroke';
-import Footer from '../Footer'
 import './Reservation.css';
 import '../../App.css';
 import 'react-date-range/dist/styles.css';
 import 'react-date-range/dist/theme/default.css';
-
-
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 function Reservation() {
+    useEffect(() =>{
+        Aos.init({duration:2000});
+          },[]);
    
     const colourStyles = {
         menuList: styles => ({
@@ -94,19 +96,19 @@ function Reservation() {
             <div className='main-container'>
                 <div className='reser-head'>
                     <div className='heading'>
-                        <h2><div className='designstroke'><StrokeDesign /></div>Reservation<div className='designstroke'><StrokeDesign /></div></h2>
-                        <p>BOOK YOUR TABLE</p>
+                        <h2 data-aos="flip-left"><div className='designstroke'><StrokeDesign /></div>Reservation<div className='designstroke'><StrokeDesign /></div></h2>
+                        <p data-aos="zoom-in" >BOOK YOUR TABLE</p>
                     </div>
                 </div>
 
 
                 <div className='reser-content'>
-                    <p>RESERVATION</p>
-                    <h2><div className='designstroke'><StrokeDesign /></div>Book a Table<div className='designstroke'><StrokeDesign /></div></h2>
-                    <p>All booking payment is secured with credit card,
+                    <p data-aos="zoom-in" >RESERVATION</p>
+                    <h2 data-aos="flip-left"><div className='designstroke'><StrokeDesign /></div>Book a Table<div className='designstroke'><StrokeDesign /></div></h2>
+                    <p data-aos="zoom-in" >All booking payment is secured with credit card,
                         no charges will be apply for online booking.</p>
                     <h4>Booking request +90-1234-5678 or fill out the order form</h4>
-                    <div className='booking-section'>
+                    <div className='booking-section' data-aos="zoom-in" >
                     <div className='reser-container'>
 
                         <div className='reser-name'>
@@ -159,19 +161,19 @@ function Reservation() {
 </div>
 
                 <div className='location'>
-                    <div className='left'>
+                    <div className='left' data-aos="zoom-in">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d208791.96928669946!2d136.76149534004523!3d35.1472793267635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6003709e107b2365%3A0x2a9622d4e8ceb352!2sNagoya%2C%20Aichi!5e0!3m2!1sen!2sjp!4v1691041453784!5m2!1sen!2sjp"
                             loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
-                    <div className='right'>
-                        <h2>NAGOYA</h2>
-                        <div className='right-content'>
+                    <div className='right' data-aos="zoom-in">
+                        <h2 data-aos="flip-left" >NAGOYA</h2>
+                        <div className='right-content' data-aos="fade-up">
                             <h3>Contact Us</h3>
                             <Link to="/">Sushi Restaurant, Nagoya</Link>
                             <Link to="/">100200 Aichi, 123-3456-7658</Link>
                             <Link to="/">sushi-reservation@gmail.com</Link>
                         </div>
-                        <div className='right-content'>
+                        <div className='right-content'data-aos="fade-up">
                             <h3>Opening hours</h3>
                             <Link to="/">Mon - Fri: 9:00 am-22:00 pm</Link>
                             <Link to="/">Sat - Sun: 9:00 am-24:00 pm</Link>

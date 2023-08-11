@@ -10,7 +10,14 @@
     margin-bottom: 5px;
 }
 .menustrength h2{
-    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 500;
+    margin-top: 5px;
+    margin-bottom: 1rem;
+    font-family: 'Lumanosimo', cursive;
 }
 .strength-container{
     display: flex;
@@ -25,11 +32,8 @@
     background: #242424;
     color: #fff;
 }
-.container-section:hover .icon{
-    transform:rotate(360deg);
-}
+
 .container-section ul li .icon{
-    transition: transform .3s;
     font-size: 80px;
     color: rgb(207, 202, 202);
 }
@@ -37,6 +41,7 @@
     font-size: 24px;
     font-weight: 300;
     margin-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
 }
 .container-section p{
     font-size: 14px;

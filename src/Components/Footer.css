@@ -19,16 +19,18 @@
 
 form {
     display: flex;
-    padding: 0px 50px;
     flex-direction: column;
 }
 
 .footer-content-heading {
     color: white;
     margin-bottom: 24px;
-    font-size: 30px;
+    font-size: 28px;
+    font-weight: 500;
+    margin-top: 5px;
     justify-content: center;
     text-align: center;
+    font-family: 'Lumanosimo', cursive;
 }
 
 .footer-content-text {
@@ -48,20 +50,23 @@ form {
     margin-bottom: 16px;
     border: 1px solid #fff;
 }
-button.footer-btn{
+
+button.footer-btn {
     padding: 8px 20px;
     color: white;
     background-color: black;
-    border:none;
+    border: none;
     border-radius: 0%;
     outline: none;
 }
-button.footer-btn:hover{
-    background:white;
+
+button.footer-btn:hover {
+    background: white;
     color: black;
 }
+
 .footer-links {
-    margin-top:40px;
+    margin-top: 40px;
     width: 100%;
     /* max-width: 1000px; */
     justify-content: center;
@@ -122,7 +127,7 @@ button.footer-btn:hover{
     align-items: center;
     width: 90%;
     max-width: 1000px;
-    margin: 40px auto 0 auto;
+    margin: 10px auto 0 auto;
 }
 
 .social-icons {
@@ -137,20 +142,17 @@ button.footer-btn:hover{
     text-decoration: none;
     justify-self: start;
     cursor: pointer;
-    margin-left: 20px;
     font-size: 2rem;
     display: flex;
     align-self: center;
-    margin-bottom: 16px;
 }
 
 .website-rights {
     color: #fff;
-    margin-bottom: 16px;
+    margin-bottom: 0px;
 }
 
 .social-logo img {
-    margin-left: 0.5rem;
     width: 4rem;
     height: 3rem;
     border-radius: 80%;
@@ -180,6 +182,23 @@ button.footer-btn:hover{
     }
 
     .social-media-wrap {
-        flex-direction: column;
+        width: 100%;
+        display: flex;
+        margin: 10px 0px;
+        padding: 0px 5px;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+
+    form {
+        padding: 0px 10px;
+    }
+
+    hr {
+        display: block;
+    }
+
+    .social-logo {
+        margin: 0px;
     }
 }

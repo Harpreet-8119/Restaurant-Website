@@ -20,7 +20,15 @@
     color: white;
 }
 .homeslider h2{
+    display: flex;
     margin-bottom: 30px;
+    font-size: 28px;
+    font-weight: 500;
+    margin-top: 5px;
+    margin-bottom: 2rem;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Lumanosimo', cursive;
 }
 .slider-img{
     width: 100%;

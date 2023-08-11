@@ -3,8 +3,12 @@
     padding: 3rem 6rem;
     justify-content: center;
     text-align: center;
+    overflow: hidden;
 }
 .Hmenu-container h2 {
+    display: flex;
+    position: relative;
+    justify-content: center;
     text-align: center;
     font-size: 28px;
     font-weight: 500;
@@ -129,7 +133,7 @@ justify-content: space-evenly;
     .Hmenu-right {
         padding:0px;
     }
-    hr{
+    .Menu-item hr{
         display: none;
     }
     .Item-title{
