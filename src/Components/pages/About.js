@@ -10,6 +10,7 @@ import {BiSolidParty} from 'react-icons/bi';
 import {GiChefToque} from 'react-icons/gi';
 import {MdFoodBank} from 'react-icons/md';
 import IMG17 from '../assets/img-17.webp';
+import IMG21 from '../assets/chef2.jpg';
 import IMG22 from '../assets/img-22.webp';
 import IMG23 from '../assets/img-23.webp';
 import IMG25 from '../assets/img25.webp';
@@ -70,7 +71,7 @@ function AboutUs() {
             <div className='chef-content' data-aos="fade-up"
      data-aos-duration="3000">
               <div className='chef-info'>
-                <img src={IMG23} />
+                <img src={IMG21} />
                 <div className='chef-links'>
                   <ul>
                     <li><a href='https://www.facebook.com/'> <i className='fab fa-facebook'></i>Facebook</a></li>
@@ -85,7 +86,7 @@ function AboutUs() {
             <div className='chef-content' data-aos="fade-up-left"
      data-aos-duration="3000">
               <div className='chef-info'>
-                <img src={IMG22} />
+                <img src={IMG23} />
                 <div className='chef-links'>
                   <ul>
                     <li><a href='https://www.facebook.com/'><i className='fab fa-facebook'></i>Facebook</a></li>

@@ -112,10 +112,10 @@ function Reservation() {
                     <div className='reser-container'>
 
                         <div className='reser-name'>
-                            <input type='text' placeholder='Your Name'></input>
+                            <input type='text' placeholder='Your Name' required/>
                         </div>
                         <div className='ph-num'>
-                            <input type='digit' placeholder='Phone Number'></input>
+                            <input type='digit' placeholder='Phone Number' required/>
                         </div>
                         <div className="calendarWrap">
                             <input
@@ -123,7 +123,7 @@ function Reservation() {
                                 readOnly
                                 className="inputBox"
                                 onClick={() => setOpen(open => !open)}
-                            />
+                                required/>
                             <div ref={refOne}>
                                 {open &&
                                     <Calendar
@@ -142,18 +142,18 @@ function Reservation() {
                                 options={options}
                                 placeholder={' No of Person '}
                                 styles={colourStyles}
-                            />
+                                required/>
                         </div>
                     
                         <div className='time'>
                             <Select options={Time}
                                 placeholder={'Select Time'}
                                 styles={colourStyles}
-                            />
+                                required/>
                         </div>
                     
                         <div className='booknow'>
-                            <button type='submit'>Book Now</button>                     
+                            <button type='submit' value='Submit'>Book Now</button>                     
                     </div>
                 </div>
                 </div>

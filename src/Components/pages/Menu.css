@@ -1,11 +1,11 @@
 .container {
-    background: #242424;
+    background: black;
     padding: 2rem 6rem;
     font-family: 'Ubuntu', sans-serif;
 }
 
 .menu {
-    background: black;
+    background: #0d0d0d;
     padding: 30px 0px;
     color: #fff;
 }
@@ -16,6 +16,7 @@
     text-align: center;
     font-size: 28px;
     font-weight: 500;
+    line-height: 2;
     margin-bottom: 1rem;
     font-family: 'Lumanosimo', cursive;
 }
@@ -24,7 +25,7 @@
     width: 100%;
     display: flex;
     justify-content: space-evenly;
-    background-color: black;
+    background-color: #0d0d0d;
 
 }
 
@@ -59,7 +60,7 @@
 @media screen and (max-width:624px) {
 
     .container {
-        padding: 1rem 2.5rem;
+        padding: 1rem 2rem;
     }
 
     .container h1 {

@@ -58,7 +58,7 @@ function Menu() {
             </div>
 
 
-            <div className="menu-container" data-aos="fade-up">
+            <div className="menu-container" >
                 <div className="menu-img"  data-aos="fade-down-right"
 >
                     <img src={IMG8} />
@@ -92,7 +92,7 @@ function Menu() {
 
             </div>
 
-            <div className="menu-container" data-aos="fade-up">
+            <div className="menu-container">
 
                 <div className="menu-content"  data-aos="fade-up-right">
                     <h2>Appetizers</h2>
@@ -128,7 +128,7 @@ function Menu() {
 
             </div>
 
-            <div className="menu-container" data-aos="fade-up">
+            <div className="menu-container" >
                 <div className="menu-img" data-aos="fade-down-right">
                     <img src={IMG9}></img>
                 </div>
@@ -164,7 +164,7 @@ function Menu() {
 
             </div>
 
-            <div className="menu-container" data-aos="fade-up">
+            <div className="menu-container" >
                 <div className="menu-content" data-aos="fade-up-right" >
                     <h2>Desserts</h2>
                     <div className="menu-items" >
@@ -198,7 +198,7 @@ function Menu() {
                 </div>
             </div>
 
-            <div className="menu-container" data-aos="fade-up">
+            <div className="menu-container">
                 <div className="menu-img" data-aos="fade-down-right" >
                     <img src={IMG18}></img>
                 </div>
@@ -237,7 +237,7 @@ function Menu() {
                     </div>
                 </div>
 </div>
-                <div className="menu-container" data-aos="fade-up">
+                <div className="menu-container" >
 
 
                     <div className="menu-content" data-aos="fade-up-right">
@@ -279,7 +279,7 @@ function Menu() {
                     </div>
                     </div>
 
-                <div className="menu-container" data-aos="fade-up">
+                <div className="menu-container" >
 
                     <div className="menu-img" data-aos="fade-down-right">
                         <img src={IMG20}></img>

@@ -58,7 +58,7 @@ const Homecards = () => {
         <>
         <div className='Main-slidercontainer'>      
         <div className='homeslider'>
-        <p data-aos="zoom-in">Popular Item</p>
+        <p data-aos="zoom-in">Speacial Item</p>
             <h2 data-aos="flip-left"><div className='designstroke'><StrokeDesign /></div>Popular Food Item<div className='designstroke'><StrokeDesign /></div></h2>
         <Slider {...settings}>
             <div className='slider-img'>

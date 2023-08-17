@@ -6,7 +6,20 @@ import IMGLOGO from './assets/logo.jpg';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
+import { useRef } from 'react';
+import emailjs from 'emailjs-com';
 function Footer() {
+    const form= useRef();
+
+    const sendEmail = (e) => {
+      e.preventDefault();
+  
+      emailjs.sendForm('service_6o73vow', 'template_76he0oh', form.current, '7FuJM_mOCdRv7JLCs')
+  
+      e.target.reset()
+       
+    };
+
     useEffect(() => {
         Aos.init({ duration: 1000 });
     }, []);
@@ -27,12 +40,12 @@ function Footer() {
                     </h2>
                     <section className='footer-content'>
                         <div className='input-areas'>
-                            <form>
+                            <form ref={form} onSubmit={sendEmail}>
                                 <input type='name' name='text' placeholder='Your name'
-                                    className='footer-input' />
+                                    className='footer-input' required/>
                                 <input type='email' name='email' placeholder='Your email'
-                                    className='footer-input' />
-                                <input type="textarea" className='footer-input' placeholder='Message'></input>
+                                    className='footer-input' required/>
+                                <input type="textarea" className='footer-input' placeholder='Message' required/>
                                 <button className="footer-btn" type="submit">Send</button>
                             </form>
                         </div>
@@ -59,22 +72,22 @@ function Footer() {
                                 <h2>Get In Touch</h2>
                                 <div className='social-icons'>
 
-                                    <Link className='social-icon-link facebook' to="/"
+                                    <Link className='social-icon-link facebook' to="https://www.facebook.com/"
                                         target='_blank'
                                         aria-label='Facebook'>
                                         <i className='fab fa-facebook'></i>
                                     </Link>
-                                    <Link className='social-icon-link instagram' to="/"
+                                    <Link className='social-icon-link instagram' to="https://www.instagram.com/"
                                         target='_blank'
                                         aria-label='instagram'>
                                         <i className='fab fa-instagram'></i>
                                     </Link>
-                                    <Link className='social-icon-link line' to="/"
+                                    <Link className='social-icon-link line' to="https://line.me/en/"
                                         target='_blank'
                                         aria-label='Line'>
                                         <i className='fab fa-line'></i>
                                     </Link>
-                                    <Link className='social-icon-link Twitter' to="/"
+                                    <Link className='social-icon-link Twitter' to="https://www.twitter.com/"
                                         target='_blank'
                                         aria-label='LTwitter'>
                                         <i className='fab fa-twitter'></i>

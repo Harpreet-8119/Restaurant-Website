@@ -1,5 +1,6 @@
 import React from 'react';
 import './Homemenu.css';
+import { Link } from 'react-router-dom';
 import StrokeDesign from './Stroke';
 import IMGM2 from './assets/IMGM2.jpg';
 import IMGM1 from './assets/img02.webp';
@@ -146,7 +147,7 @@ function Homemenu() {
                 <div className='view-btn' data-aos="flip-left"
      data-aos-easing="ease-out-cubic"
      data-aos-duration="1000">
-                    <button className="view-menu">View the full Menu</button>
+                    <button className="view-menu"><Link to="/menu">View the full Menu</Link></button>
                 </div>
             </div>
 
