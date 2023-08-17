@@ -17,9 +17,9 @@ function HeroSection() {
         {/* <video src='videos/video-2.mp4' autoPlay loop muted /> */}
       </div>
       <div className='hero-content'>
-        <h1  className='heading'>Sushi Restaurant</h1>
-        <p  className='heading' >JAPANESE CUISINE & ONLINE DELIVERY</p>
-        <div  className='hero-btns heading'>
+        <h1 data-aos="flip-left" className='heading'>Sushi Restaurant</h1>
+        <p data-aos="fade-up" className='heading' >JAPANESE CUISINE & ONLINE DELIVERY</p>
+        <div  className='hero-btns heading' data-aos="fade-up">
           <Button
             buttonStyle='btn--outline'
             buttonSize='btn--large'

@@ -2,7 +2,6 @@ import React from 'react';
 import '../App.css';
 import './homeabout.css';
 import IMG13 from './assets/img-13.webp';
-import StrokeDesign from './Stroke';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
