@@ -181,3 +181,14 @@
         margin-bottom: 20px;
     }
 }
+
+@media screen and (width:360px){
+ .event__detail h2{
+    padding-top:0px;
+    margin-top:0px;
+ }   
+ .event__detail p{
+    margin-top:10px;
+    margin-bottom:10px;
+ }
+}

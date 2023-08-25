@@ -97,6 +97,7 @@
 .chef-content .chef-info:hover .chef-links {
     display: inline-block;
     transform: translateY(-150%);
+    transition:0.3s ease-in-out;
 }
 
 .chef-info {
@@ -105,6 +106,7 @@
 
 .chef-info img {
     width: 270px;
+    position: relative;
     background-position: center;
     object-fit: cover;
     background-repeat: no-repeat;
@@ -113,9 +115,22 @@
     border-radius: 10px;
     box-shadow: 0 6px 20px rgba(56, 125, 255, 0.17);
 }
+.chef-name{
+    background: black;
+    opacity: 0.6;
+    width: 100%;
+    padding: 20px;
+    position: absolute;
+    top:343px;
+}
+.chef-name h4{
+    font-size: 20px;
+    font-weight: 100;
+}
 
 .chef-content:hover img {
     opacity: 0.3;
+    transition: 0.3s ease-in-out;
 }
 
 .about-us {
@@ -147,6 +162,7 @@ li {
 .strength-container {
     position: relative;
     display: flex;
+    gap: 7.5px;
     justify-content: space-evenly;
 }
 

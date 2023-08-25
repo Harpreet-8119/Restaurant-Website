@@ -57,6 +57,9 @@ function AboutUs() {
      data-aos-duration="3000">
               <div className='chef-info' >
                 <img src={IMG22}/>
+                <div className='chef-name' >
+                <h4>Chef Yuika</h4>
+              </div>
                 <div className='chef-links'>
                   <ul>
                     <li><a href='https://www.facebook.com/'> <i className='fab fa-facebook'></i>Facebook</a></li>
@@ -72,6 +75,9 @@ function AboutUs() {
      data-aos-duration="3000">
               <div className='chef-info'>
                 <img src={IMG21} />
+                <div className='chef-name' >
+                <h4>Chef Sakura</h4>
+              </div>
                 <div className='chef-links'>
                   <ul>
                     <li><a href='https://www.facebook.com/'> <i className='fab fa-facebook'></i>Facebook</a></li>
@@ -87,6 +93,9 @@ function AboutUs() {
      data-aos-duration="3000">
               <div className='chef-info'>
                 <img src={IMG23} />
+                <div className='chef-name' >
+                <h4>Chef Haruki</h4>
+              </div>
                 <div className='chef-links'>
                   <ul>
                     <li><a href='https://www.facebook.com/'><i className='fab fa-facebook'></i>Facebook</a></li>
