@@ -7,6 +7,7 @@ import MenuStrength from '../Menustrength';
 import Homeabout from '../homeabout';
 import Booking from '../booking';
 import Footer from '../Footer';
+import Navbar from '../Navbar';
 
 
 function Home() {
