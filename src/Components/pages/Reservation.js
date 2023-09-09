@@ -17,6 +17,40 @@ function Reservation() {
         Aos.init({duration:2000});
           },[]);
    
+          
+              
+              const [name, setName] = useState('');
+              const [Phone, setPhone] = useState('');
+              const [selectedOption, setSelectedOption] = useState('');  
+              const [selectedPerson, setSelectedPerson] = useState('');  
+              
+              const handlePersonChange = (selectedPerson) => {
+                  setSelectedPerson(selectedPerson);
+              };
+          
+              const handleDateChange = (calendar) => {
+                  setCalendar(calendar);
+              };
+              const handleOptionChange = (selectedOption) => {
+                setSelectedOption(selectedOption);
+            };
+              const handleNameChange = (event) => {
+                  setName(event.target.value);
+              };
+              const handlePhoneChange = (event) => {
+                  setPhone(event.target.value);
+              };
+          
+              const handleBookNowClick = () => {
+                  
+                  if (name && Phone && calendar && selectedPerson && selectedOption) {
+                      
+                      alert('Booking sent successfully!');
+                  } else {
+                      alert('Please fill in all the required information.');
+                  }
+              };
+
     const colourStyles = {
         menuList: styles => ({
           ...styles,
@@ -109,19 +143,20 @@ function Reservation() {
                         no charges will be apply for online booking.</p>
                     <h4>Booking request +90-1234-5678 or fill out the order form</h4>
                     <div className='booking-section' data-aos="zoom-in" >
+                    <form>
                     <div className='reser-container'>
-
                         <div className='reser-name'>
-                            <input type='text' placeholder='Your Name' required/>
+     <input type='text' placeholder='Your Name'value={name} onChange={handleNameChange}  required/>
                         </div>
                         <div className='ph-num'>
-                            <input type='digit' placeholder='Phone Number' required/>
+                            <input type='tel'value={Phone} onChange={handlePhoneChange}  placeholder='Phone Number' required/>
                         </div>
-                        <div className="calendarWrap">
+                        <div className="calendarWrap" >
                             <input
                                 value={calendar}
                                 readOnly
                                 className="inputBox"
+                                onChange={(e) => handleDateChange(e.target.value)}
                                 onClick={() => setOpen(open => !open)}
                                 required/>
                             <div ref={refOne}>
@@ -140,6 +175,8 @@ function Reservation() {
                         <div className='person'>
                             <Select className='noofperson'
                                 options={options}
+                                value={selectedPerson}
+                        onChange={(selectedPerson) => handlePersonChange(selectedPerson)}                
                                 placeholder={' No of Person '}
                                 styles={colourStyles}
                                 required/>
@@ -147,15 +184,18 @@ function Reservation() {
                     
                         <div className='time'>
                             <Select options={Time}
+                            value={selectedOption}
+                            onChange={(selectedOption) => handleOptionChange(selectedOption)}
                                 placeholder={'Select Time'}
                                 styles={colourStyles}
                                 required/>
                         </div>
                     
                         <div className='booknow'>
-                            <button type='submit' value='Submit'>Book Now</button>                     
+                            <button type='submit' value='Submit' onClick={handleBookNowClick}>Book Now</button>                     
                     </div>
                 </div>
+                </form>
                 </div>
 
 </div>
