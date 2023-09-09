@@ -45,7 +45,7 @@ function Reservation() {
                   
                   if (name && Phone && calendar && selectedPerson && selectedOption) {
                       
-                      alert('Booking sent successfully!');
+                      alert('Your Booking infomation has been sent successfully!');
                   } else {
                       alert('Please fill in all the required information.');
                   }
